@@ -2,6 +2,31 @@
   <ul>
     <li><a href='/'>Home</a></li>
     <li><a href='/about'>About</a></li>
+    <li><a href='/about'>Resources</a></li>
     <ul></ul>
   </ul>
 </nav>
+<!-- // scoped style example -->
+
+<style lang='scss'>
+  $primary: hsl(225 50% 40%);
+  $secondary: hsl(225 80% 60%);
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 20px;
+
+    a {
+      color: $primary;
+
+      &:hover,
+      &:focus {
+        color: $secondary;
+      }
+    }
+  }
+</style>
