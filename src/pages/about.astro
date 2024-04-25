@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title='the second page of this site'>
+  <div class='container'>
+    <p>
+      Scoped styles allow us to write CSS within a single component (or layout),
+      and have those styles apply only to that component, without having to
+      worry about class names or anything else.
+    </p>
+  </div>
+
+  <p>
+    Corporis quibusdam eum alias debitis quos maxime fugit enim est placeat
+    molestias perspiciatis fugiat adipisci, veritatis molestiae tempore
+    voluptatem labore reprehenderit tenetur, facere, odio qui vitae. Nisi vero
+    asperiores atque?
+  </p>
+  <p>
+    Iusto illo excepturi neque corporis suscipit vero alias ullam assumenda
+    necessitatibus, officiis rem dolores voluptates quisquam consequatur sed
+    officia quaerat possimus hic aut totam? Molestias officiis assumenda
+    suscipit beatae repellat.
+  </p>
+</BaseLayout>
+
+<style lang='scss'>
+  @use '../styles/base/_container.scss' as *;
+</style>
