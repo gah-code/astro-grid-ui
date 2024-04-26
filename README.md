@@ -1,3 +1,3 @@
-- Astro and Grid pattern
+- Building websites with Astro
 
 Experiment with scoped styled
