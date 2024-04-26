@@ -28,11 +28,9 @@ body {
   5. Improve text rendering
 */
 
+//  the width property is set to be the minimum of either 100% of the viewport width minus 4 rem, or 55 characters, whichever is smaller. This ensures that the element remains responsive and adjusts its width according to the available space, but it won't exceed 55 characters in width.
+
 body {
-  // font-family: system-ui;
-  // font-size: 1.25rem;
-  // color: hsl(0 0% 12%);
-  // line-height: 1.6;
   background: hsl(0 15% 90%);
   // needs to be defined
   width: min(100% - 4rem, 55ch);

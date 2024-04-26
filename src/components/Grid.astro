@@ -1,0 +1,48 @@
+<section>
+  <div class='cluster'>
+    <div class='child'>Lorem</div>
+    <div class='child'>Illum</div>
+    <div class='child'>Minima</div>
+    <div class='child'>Blanditiis</div>
+    <div class='child'>Assumenda</div>
+    <div class='child'>Enim</div>
+    <div class='child'>Ullam</div>
+    <div class='child'>Dignissimos</div>
+    <div class='child'>Ab</div>
+    <div class='child'>Quasi</div>
+  </div>
+</section>
+
+<style lang='scss'>
+  .cluster {
+    outline: 5px solid hotpink;
+    padding: 1rem;
+
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .flexible-grid {
+    outline: 5px solid hotpink;
+    padding: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+
+  section:nth-child(even) {
+    background-color: hsl(0 0% 100% / 0.05);
+  }
+
+  .child {
+    border: 3px solid hsl(230, 75%, 75%);
+    padding: 0.5rem;
+    background: hsl(230, 75%, 25%);
+  }
+</style>
