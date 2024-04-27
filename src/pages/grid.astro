@@ -1,11 +1,41 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Grid from '../components/Grid.astro';
 ---
 
-<BaseLayout title='Grid'>
-  <p>Astro is pretty neat, and really easy to use!</p>
+<BaseLayout title='the grid page'>
+  <br />
+
+  <h3>flex: 1 sets flex-grow to 1 (whereas the default value is 0).</h3>
+  <br />
+
   <p>
-    By placing content inside of is Layout, it's being inserted where the Slot
-    is in the template, which is really neat!
+    If all items have flex-grow set to 1, the remaining space in the container
+    will be distributed equally to all children. If one of the children has a
+    value of 2, the remaining space would take up twice as much space as the
+    others (or it will try to, at least).
   </p>
+  <br />
+  <p>
+    flex: 1: This property is a shorthand for setting three properties related
+    to the CSS Flexible Box Layout (Flexbox): flex-grow, flex-shrink, and
+    flex-basis.
+  </p>
+  <br />
+  <p>
+    grid-template-columns: repeat(auto-fit, minmax(min(10rem, 100%), 1fr));
+    creates a responsive grid layout where columns are at least 10rem wide (but
+    not wider than the container itself) and expand equally to fill any
+    additional space. This setup ensures that the grid adapts to different
+    screen sizes by adjusting the number of columns and their width dynamically.
+  </p>
+  <br />
+  <span>
+    auto-fit: dynamically fits the number of columns based on the container's
+    width and the column's minimum and maximum sizes. Unlike auto-fill, auto-fit
+    collapses extra space and removes empty columns, ensuring that the grid
+    adapts efficiently to its content and the available space.
+  </span>
+
+  <Grid />
 </BaseLayout>
