@@ -1,12 +1,10 @@
 <nav>
-  <ul>
+  <ul class='nav-list'>
     <li><a href='/'>Home</a></li>
     <li><a href='/about'>About</a></li>
     <li><a href='/resources'>Resources</a></li>
     <li><a href='/grid'>Grid</a></li>
     <li><a href='/notes'>Github</a></li>
-
-    <ul></ul>
   </ul>
 </nav>
 <!-- // scoped style example -->
@@ -14,7 +12,15 @@
 <style lang='scss'>
   $primary: hsl(225 50% 40%);
   $secondary: hsl(225 80% 60%);
+  .nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
+    display: flex;
+    gap: 0 max(1rem, 2vw);
+    flex-wrap: wrap;
+  }
   ul {
     list-style: none;
     margin: 0;
@@ -31,5 +37,9 @@
         color: $secondary;
       }
     }
+  }
+
+  li {
+    margin-bottom: 3rem;
   }
 </style>

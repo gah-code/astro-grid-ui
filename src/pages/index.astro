@@ -3,22 +3,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title='my first Astro page of this site'>
-  <p>Astro is pretty neat, and really easy to use!</p>
-  <p>
-    By placing content inside of is Layout, it's being inserted where the Slot
-    is in the template, which is really neat!
-  </p>
-  <h2>Astro has a lot of benefits</h2>
-  <ul>
-    <li>It ships zero JavaScript by default</li>
-    <li>Very customizable</li>
-    <li>
-      Framework agnostic (you don’t need to use a JS framework, or you can use
-      React, Svelte, Vue, etc. (or even combine them))
-    </li>
-    <li>Fantastic documentation</li>
-    <li>Easy to level up with</li>
-  </ul>
+  <div class='container'>
+    <p>Astro is pretty neat, and really easy to use!</p>
+    <p>
+      By placing content inside of is Layout, it's being inserted where the Slot
+      is in the template, which is really neat!
+    </p>
+    <h2>Astro has a lot of benefits</h2>
+    <ul>
+      <li>It ships zero JavaScript by default</li>
+      <li>Very customizable</li>
+      <li>
+        Framework agnostic (you don’t need to use a JS framework, or you can use
+        React, Svelte, Vue, etc. (or even combine them))
+      </li>
+      <li>Fantastic documentation</li>
+      <li>Easy to level up with</li>
+    </ul>
+  </div>
 </BaseLayout>
 
 <!-- https://codepen.io/kevinpowell/pen/MWrKqZZ -->
