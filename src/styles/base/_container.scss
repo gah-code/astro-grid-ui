@@ -4,8 +4,20 @@
   margin: 0 auto;
   padding: 0 calc(2rem / 2);
   max-width: 100%;
+  background-color: rgb(82, 151, 255);
 
   @include breakpoint(medium) {
     padding: 0 2rem;
+    background-color: rgb(58, 76, 76);
+  }
+
+  @include breakpoint(large) {
+    padding: 0 calc(2rem / 2);
+    max-width: 1200px;
+    background-color: #cecece;
+  }
+
+  &.stretch {
+    max-width: 100%;
   }
 }
